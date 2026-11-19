@@ -1,0 +1,345 @@
+/*
+ * Ducati model catalogue.
+ * Prices and specifications are based on Ducati's official US model range.
+ * Limited "100" editions do not have a published price, so they are quoted
+ * as "Price on request".
+ */
+window.DUCATI_BIKES = [
+  {
+    id: "desertx",
+    name: "DesertX",
+    category: "desertx",
+    categoryLabel: "DesertX",
+    badge: "Adventure",
+    engine: "937 cc Testastretta 11\u00b0",
+    power: "110 HP",
+    torque: "68 lb-ft",
+    price: 17995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/1vwdPTpTeizmpbhcX4bN8Z/a3395d8286451d61b14583108790d8a1/Model-Menu-MY22-DesertX.png",
+    blurb: "Adventure without limits.",
+  },
+  {
+    id: "desertx-100",
+    name: "DesertX 100",
+    category: "desertx",
+    categoryLabel: "DesertX",
+    badge: "Collezione 100",
+    engine: "890 cc V2",
+    power: "110 HP",
+    torque: "68 lb-ft",
+    price: null,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/4tPvHsxYXT5G5RsrcIO9sY/a419f46e3a3b52f0e19cd2ecc25e39bf/2026-05-28_DesertX-V2-100-MY26-Model-Menu-780x430.png",
+    blurb: "Limited edition. 100 units.",
+  },
+  {
+    id: "desertx-rally",
+    name: "DesertX Rally",
+    category: "desertx",
+    categoryLabel: "DesertX",
+    badge: "Adventure",
+    engine: "937 cc Testastretta 11\u00b0",
+    power: "110 HP",
+    torque: "68 lb-ft",
+    price: 19995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/PPMJoUX1t12l5hAvyf9bT/3dacee7c34e95c4714b63af19ae23042/2026-10-30_DesertX-Rally-MY27-Model-Menu-780x430.png",
+    blurb: "Rally-bred adventure.",
+  },
+  {
+    id: "diavel-v4-rs",
+    name: "Diavel V4 RS",
+    category: "diavel",
+    categoryLabel: "Diavel",
+    badge: "Diavel",
+    engine: "1,158 cc V4 Granturismo",
+    power: "182 HP",
+    torque: "89 lb-ft",
+    price: 39995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/27GNGoCMO0lGWdXLDkKzqI/57b6bd40515ed2983c1f1117bd1b9352/2025-09-08-Diavel-V4-RS-MY26-Model-Menu-780x430.png",
+    blurb: "The power cruiser, redefined.",
+  },
+  {
+    id: "diavel-v4-rs-100",
+    name: "Diavel V4 RS 100",
+    category: "diavel",
+    categoryLabel: "Diavel",
+    badge: "Collezione 100",
+    engine: "1,158 cc V4 Granturismo",
+    power: "182 HP",
+    torque: "89 lb-ft",
+    price: null,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/62sU84F90Q7xgks7gA16uC/44172ff9dff6f259d3f065c9bbeaad80/2026-05-28_Diavel-V4-RS-100-MY26-Model-Menu-780x430.png",
+    blurb: "Limited edition. 100 units.",
+  },
+  {
+    id: "formula-73",
+    name: "Formula 73",
+    category: "heritage",
+    categoryLabel: "Heritage",
+    badge: "Heritage",
+    engine: "803 cc Desmodue",
+    power: "73 HP",
+    torque: "48 lb-ft",
+    price: 19995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/5qXP3So36ZAfq8wurEb2lg/8405d7dc031bbf600f6b6eec7545e6cf/2026-02-11_Formula-73-MY26-Model-Menu-780x430.png",
+    blurb: "The timeless spirit of Ducati.",
+  },
+  {
+    id: "hypermotard-698-mono",
+    name: "Hypermotard 698 Mono",
+    category: "motard",
+    categoryLabel: "Motard",
+    badge: "Motard",
+    engine: "659 cc Superquadro Mono",
+    power: "77.5 HP",
+    torque: "46.5 lb-ft",
+    price: 13995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/4nvV7L0ryk7OlQLshb40A/b9f37ecc59e4d64b4ff950c1b3921015/Model-Menu-MY24-Hypermotard-698-Mono.png",
+    blurb: "The fun bike, perfected.",
+  },
+  {
+    id: "hypermotard-698-mono-rve",
+    name: "Hypermotard 698 Mono RVE",
+    category: "motard",
+    categoryLabel: "Motard",
+    badge: "Motard",
+    engine: "659 cc Superquadro Mono",
+    power: "77.5 HP",
+    torque: "46.5 lb-ft",
+    price: 15495,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/1EiyCqzfNDeVjmOLnj9IMc/59f830b571d0685e385fd0eb7eb8df5c/2026-10-30_Hypermotard-698-Mono-RVE-MY27-Model-Menu-780x430.png",
+    blurb: "Live. Play. Ride.",
+  },
+  {
+    id: "hypermotard-698-mono-nera",
+    name: "Hypermotard 698 Mono Nera",
+    category: "motard",
+    categoryLabel: "Motard",
+    badge: "Motard",
+    engine: "659 cc Superquadro Mono",
+    power: "77.5 HP",
+    torque: "46.5 lb-ft",
+    price: 14395,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/2ftzPr68LudMSDyTIeJZpr/7c4c6c5bfd4948f256a40fa2064d2cad/2026-05-11_Hypermotard-698-Mono-bk-MY26-Model-Menu-780x430.png",
+    blurb: "Blacked-out attitude.",
+  },
+  {
+    id: "hypermotard-v2-sp-100",
+    name: "Hypermotard V2 SP 100",
+    category: "motard",
+    categoryLabel: "Motard",
+    badge: "Collezione 100",
+    engine: "890 cc V2",
+    power: "120.4 HP",
+    torque: "69 lb-ft",
+    price: null,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/5d9k7YshptqiORVE08qJrZ/6bd6c6814a85cd535db211dd11514303/2025-11-03_Hypermotard-V2-SP-MY26-Model-Menu-780x430.png",
+    blurb: "Limited edition. 100 units.",
+  },
+  {
+    id: "monster",
+    name: "Monster",
+    category: "monster",
+    categoryLabel: "Monster",
+    badge: "Naked",
+    engine: "890 cc V2",
+    power: "111 HP",
+    torque: "67 lb-ft",
+    price: 13295,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/o1tI8LXvgG36S9x5vc1vE/972b1befbe819db86547d3c666d75e18/2025-10-20_Monster-Rd-MY26-Model-Menu-780x430.png",
+    blurb: "The lightweight naked icon.",
+  },
+  {
+    id: "monster-dark",
+    name: "Monster Dark",
+    category: "monster",
+    categoryLabel: "Monster",
+    badge: "Naked",
+    engine: "890 cc V2",
+    power: "111 HP",
+    torque: "67 lb-ft",
+    price: 12995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/3KFGGgQBndZNck1t1uMJAR/bf84ea3264e16d869d904d17bf2cecbf/2026-10-28_Monster-Dark-MY27-Model-Menu-780x430.png",
+    blurb: "Dark. Minimal. Monster.",
+  },
+  {
+    id: "monster-100",
+    name: "Monster 100",
+    category: "monster",
+    categoryLabel: "Monster",
+    badge: "Collezione 100",
+    engine: "890 cc V2",
+    power: "111 HP",
+    torque: "67 lb-ft",
+    price: null,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/4Thw5gE6H4Dm0nVeFmAWfh/75579f38b63c0c49ed16fbdec9f3492d/2026-05-28_Monster-V2-100-MY26-Model-Menu-780x430.png",
+    blurb: "Limited edition. 100 units.",
+  },
+  {
+    id: "multistrada-v4-s-grand-tour",
+    name: "Multistrada V4 S Grand Tour",
+    category: "multistrada",
+    categoryLabel: "Multistrada",
+    badge: "Touring",
+    engine: "1,158 cc V4 Granturismo",
+    power: "170 HP",
+    torque: "91 lb-ft",
+    price: 30995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/2qRTpdqqn8GuHTMLxbxIBo/8c637a10664656e981fdeb5477cac255/2026-09-29_Multistrada-V4-GT-MY27-Model-Menu-780x430.png",
+    blurb: "Grand touring, Ducati style.",
+  },
+  {
+    id: "multistrada-v4-rally",
+    name: "Multistrada V4 Rally",
+    category: "multistrada",
+    categoryLabel: "Multistrada",
+    badge: "Touring",
+    engine: "1,158 cc V4 Granturismo",
+    power: "170 HP",
+    torque: "91 lb-ft",
+    price: 31995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/1IfAYwS0n9NJJDwicuFEgl/f0759e0b358ec4a555da4d2a5dc5d6b8/2025-10-06_Multistrada-V4-Rally-Radar-JG-MY26-Model-Menu-780x430.png",
+    blurb: "Adventure-ready touring.",
+  },
+  {
+    id: "multistrada-v4-pikes-peak",
+    name: "Multistrada V4 Pikes Peak",
+    category: "multistrada",
+    categoryLabel: "Multistrada",
+    badge: "Touring",
+    engine: "1,158 cc V4 Granturismo",
+    power: "170 HP",
+    torque: "91 lb-ft",
+    price: 33995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/6hFAQi6qjTS9upCcHWNBz1/0927e55d4dabc7d3ef126d718f6dea30/2026-09-08_Multistrada-V4-Pikes-Peak-MY27-Model-Menu-780x430.png",
+    blurb: "The sportiest Multistrada.",
+  },
+  {
+    id: "multistrada-v4-rs",
+    name: "Multistrada V4 RS",
+    category: "multistrada",
+    categoryLabel: "Multistrada",
+    badge: "Touring",
+    engine: "1,158 cc V4 Granturismo",
+    power: "180 HP",
+    torque: "87 lb-ft",
+    price: 39995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/5ryKcTEGmfneG5Cxbmywf5/8a450e5b5cfc55ffd3320f2e498866ba/2025-09-08_Multistrada-V4-RS-MY26-Model-Menu-780x430.png",
+    blurb: "The touring superbike.",
+  },
+  {
+    id: "desmo250-mx",
+    name: "Desmo250 MX",
+    category: "off-road",
+    categoryLabel: "Off-Road",
+    badge: "Off-Road",
+    engine: "250 cc Desmo single",
+    power: "44.5 HP",
+    torque: "21 lb-ft",
+    price: 9995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/4H7h0RMKXsrMZTZ4w0pNP7/5f75a08109430d8056dc98b49ff01ab9/2026-06-16_Desmo250-MX-MY27-Model-Menu-780x430.png",
+    blurb: "Your entry to off-road.",
+  },
+  {
+    id: "desmo450-edx",
+    name: "Desmo450 EDX",
+    category: "off-road",
+    categoryLabel: "Off-Road",
+    badge: "Off-Road",
+    engine: "450 cc Desmo single",
+    power: "63.5 HP",
+    torque: "39.5 lb-ft",
+    price: 12495,
+    image:
+      "https://images.ctfassets.net/o6sr41tx16eu/5lsOKleW18AuJwZsQxoExz/4a590290b0db6aceafdd69f1d09fa31b/Desmo450_780x430_transparent.png",
+    blurb: "Enduro performance.",
+  },
+  {
+    id: "desmo450-mx",
+    name: "Desmo450 MX",
+    category: "off-road",
+    categoryLabel: "Off-Road",
+    badge: "Off-Road",
+    engine: "450 cc Desmo single",
+    power: "63.5 HP",
+    torque: "39.5 lb-ft",
+    price: 11595,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/2j4hLcsPPnJxbPQgOOXKgd/71a47f8e56e603e7c2dee558a324ca88/2026-09-08_Desmo450-MX-MY27-Model-Menu-780x430.png",
+    blurb: "Motocross precision.",
+  },
+  {
+    id: "desmo450-eds",
+    name: "Desmo450 EDS",
+    category: "off-road",
+    categoryLabel: "Off-Road",
+    badge: "Off-Road",
+    engine: "450 cc Desmo single",
+    power: "42 HP",
+    torque: "264 lb wet",
+    price: 12995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/4FSAlGl8NddM428WGHqis7/efb64479452e15af31ee9ffe1c61f096/2026-06-09_Desmo450-EDS-EU-MY27-Model-Menu-780x430.png",
+    blurb: "Dual-sport freedom.",
+  },
+  {
+    id: "desmo450-mx-factory",
+    name: "Desmo450 MX Factory",
+    category: "off-road",
+    categoryLabel: "Off-Road",
+    badge: "Off-Road",
+    engine: "450 cc Desmo single",
+    power: "63.5 HP",
+    torque: "39 lb-ft",
+    price: 13995,
+    image:
+      "https://images.ctfassets.net/x7j9qwvpvr5s/5EhdlxX0eIXI93VVbQsW6D/5d8323d0c7b57b81caf3704517d7aab0/2026-01-07_Desmo450-MX-MY26-Model-Menu-780x430.png",
+    blurb: "Factory race-ready.",
+  },
+];
+
+window.DUCATI_CATEGORIES = [
+  { id: "all", label: "All Bikes" },
+  { id: "desertx", label: "DesertX" },
+  { id: "diavel", label: "Diavel" },
+  { id: "heritage", label: "Heritage" },
+  { id: "motard", label: "Motard" },
+  { id: "monster", label: "Monster" },
+  { id: "multistrada", label: "Multistrada" },
+  { id: "off-road", label: "Off-Road" },
+];
+
+/*
+ * Ducati publishes its model images through Contentful, which can resize and
+ * re-encode them on the fly. Requesting a card-sized WebP keeps the grid fast
+ * while staying sharp on high-density screens.
+ */
+window.ducatiImage = (url, width = 630, height = 390) => {
+  if (!url) return "";
+  const params = new URLSearchParams({
+    w: String(width),
+    h: String(height),
+    fit: "thumb",
+    fm: "webp",
+    q: "75",
+  });
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}${params.toString()}`;
+};

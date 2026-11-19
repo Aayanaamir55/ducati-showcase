@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete your Ducati order. Enter your customer and delivery details and send your order directly to the Ducati sales team on WhatsApp.">
+    <title>Complete Your Order | Ducati</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="order-page">
+
+    <!-- Floating top controls -->
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="siteMenu" aria-expanded="false">
+        <span class="menu-toggle__icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <span class="menu-toggle__text">Menu</span>
+    </button>
+
+    <header class="top-ui">
+        <span class="top-ui__spacer" aria-hidden="true"></span>
+
+        <a href="index.html" class="brand" aria-label="Ducati home">
+            <span class="brand__word">DUCATI</span>
+            <span class="brand__sub">CORSE</span>
+        </a>
+
+        <a class="store-link" href="https://www.ducati.com/ww/en/apparel" target="_blank" rel="noopener noreferrer">
+            <span>Ducati Store</span>
+            <span class="store-link__arrow" aria-hidden="true">&#8599;</span>
+        </a>
+    </header>
+
+    <!-- Pentagon-shaped menu panel -->
+    <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+
+    <aside class="menu-panel" id="siteMenu" aria-hidden="true">
+        <div class="menu-panel__content">
+            <p class="menu-kicker">Ducati Corse</p>
+
+            <nav class="menu-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html"><span>01</span>Home</a></li>
+                    <li><a href="models.html"><span>02</span>Models</a></li>
+                    <li><a href="index.html#performance"><span>03</span>Tech &amp; Engine</a></li>
+                    <li><a href="index.html#experience"><span>04</span>Test Ride</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-meta">
+                <a href="https://www.ducati.com/ww/en/apparel" target="_blank" rel="noopener noreferrer">Ducati Store &#8599;</a>
+                <p>Borgo Panigale, Bologna<br>Italy</p>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <section class="page-hero order-hero">
+            <div class="page-hero__content">
+                <a href="models.html" class="back-link">&larr; Back to models</a>
+                <p class="tagline">SECURE YOUR DUCATI</p>
+                <h1>COMPLETE YOUR <span class="ducati-red">ORDER</span></h1>
+                <p>Enter your details below. When you confirm, your order summary is sent directly to our sales team on WhatsApp for final confirmation.</p>
+            </div>
+        </section>
+
+        <section class="order-section">
+            <div class="order-layout">
+                <form class="order-form" id="orderForm" novalidate>
+                    <div class="order-form__intro">
+                        <span class="section-subtitle">CUSTOMER DETAILS</span>
+                        <h2>TELL US ABOUT <span class="ducati-red">YOU</span></h2>
+                        <p>Fields marked with an asterisk are required.</p>
+                    </div>
+
+                    <fieldset class="form-block">
+                        <legend><span>01</span> Your details</legend>
+                        <div class="form-grid">
+                            <label class="field">
+                                <span>Full name <em>*</em></span>
+                                <input type="text" name="name" id="customerName" autocomplete="name" placeholder="e.g. Ahmed Khan" required>
+                            </label>
+                            <label class="field">
+                                <span>Email address <em>*</em></span>
+                                <input type="email" name="email" id="customerEmail" autocomplete="email" placeholder="you@example.com" required>
+                            </label>
+                            <label class="field">
+                                <span>Phone / WhatsApp <em>*</em></span>
+                                <input type="tel" name="phone" id="customerPhone" autocomplete="tel" placeholder="+92 300 1234567" required>
+                            </label>
+                            <label class="field">
+                                <span>Country <em>*</em></span>
+                                <input type="text" name="country" id="customerCountry" autocomplete="country-name" placeholder="Pakistan" required>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-block">
+                        <legend><span>02</span> Delivery details</legend>
+                        <div class="form-grid">
+                            <label class="field">
+                                <span>City <em>*</em></span>
+                                <input type="text" name="city" id="customerCity" autocomplete="address-level2" placeholder="Lahore" required>
+                            </label>
+                            <label class="field">
+                                <span>Postal code</span>
+                                <input type="text" name="postalCode" id="customerPostalCode" autocomplete="postal-code" placeholder="54000">
+                            </label>
+                            <label class="field field--full">
+                                <span>Delivery address <em>*</em></span>
+                                <input type="text" name="address" id="customerAddress" autocomplete="street-address" placeholder="House / street / area" required>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-block">
+                        <legend><span>03</span> Your order</legend>
+                        <div class="form-grid">
+                            <label class="field">
+                                <span>Ducati model <em>*</em></span>
+                                <select name="bike" id="orderModel" required></select>
+                            </label>
+                            <label class="field">
+                                <span>Quantity <em>*</em></span>
+                                <input type="number" name="quantity" id="orderQuantity" min="1" max="10" step="1" value="1" required>
+                            </label>
+                            <label class="field">
+                                <span>Preferred colour / edition</span>
+                                <select name="colour" id="orderColour">
+                                    <option value="Ducati Red">Ducati Red</option>
+                                    <option value="Thrilling Black">Thrilling Black</option>
+                                    <option value="Iceberg White">Iceberg White</option>
+                                    <option value="Nera / black">Nera / black</option>
+                                    <option value="Discuss with specialist">Discuss with specialist</option>
+                                </select>
+                            </label>
+                            <label class="field">
+                                <span>Payment preference</span>
+                                <select name="payment" id="orderPayment">
+                                    <option value="Discuss with specialist">Discuss with specialist</option>
+                                    <option value="Ducati Financial Services">Ducati Financial Services</option>
+                                    <option value="Bank transfer">Bank transfer</option>
+                                    <option value="Card at dealership">Card at dealership</option>
+                                </select>
+                            </label>
+                            <label class="field field--full">
+                                <span>Delivery preference</span>
+                                <select name="delivery" id="orderDelivery">
+                                    <option value="Discuss with specialist">Discuss with specialist</option>
+                                    <option value="Dealer collection">Dealer collection</option>
+                                    <option value="Home delivery">Home delivery</option>
+                                </select>
+                            </label>
+                            <label class="field field--full">
+                                <span>Notes for our team</span>
+                                <textarea name="notes" id="orderNotes" rows="4" placeholder="Accessories, trade-in, preferred contact time, or anything else we should know."></textarea>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <label class="check">
+                        <input type="checkbox" name="terms" id="orderTerms" required>
+                        <span>I confirm that my details are correct and I would like a Ducati specialist to contact me to finalise this order.</span>
+                    </label>
+
+                    <button type="submit" class="btn btn-primary btn-full order-submit" id="orderSubmit">
+                        Confirm &amp; Send Order
+                    </button>
+                    <p class="form-note">
+                        By confirming, your order details are prepared for WhatsApp and sent to
+                        <strong>+92 311 3107375</strong>. No payment is taken on this website.
+                    </p>
+                </form>
+
+                <aside class="order-summary" aria-live="polite">
+                    <div class="summary-header">
+                        <span class="section-subtitle">ORDER SUMMARY</span>
+                        <a href="models.html" class="summary-edit">Change model</a>
+                    </div>
+
+                    <div class="summary-bike">
+                        <div class="summary-bike__image">
+                            <img id="summaryImage" src="" alt="">
+                        </div>
+                        <div class="summary-bike__info">
+                            <span class="summary-category" id="summaryCategory"></span>
+                            <h3 id="summaryName">Ducati</h3>
+                            <p id="summaryEngine"></p>
+                        </div>
+                    </div>
+
+                    <div class="summary-specs" id="summarySpecs"></div>
+
+                    <dl class="summary-list">
+                        <div>
+                            <dt>Unit price</dt>
+                            <dd id="summaryPrice">&mdash;</dd>
+                        </div>
+                        <div>
+                            <dt>Quantity</dt>
+                            <dd id="summaryQty">1</dd>
+                        </div>
+                        <div class="summary-total">
+                            <dt>Estimated total</dt>
+                            <dd id="summaryTotal">&mdash;</dd>
+                        </div>
+                    </dl>
+
+                    <p class="summary-note">
+                        Final pricing, availability, taxes and delivery are confirmed by a Ducati specialist. Limited Collezione 100 models are quoted on request.
+                    </p>
+
+                    <ul class="summary-points">
+                        <li>Official Ducati model range</li>
+                        <li>No payment taken online</li>
+                        <li>Direct WhatsApp confirmation</li>
+                    </ul>
+
+                    <a class="summary-help" href="https://wa.me/923113107375" target="_blank" rel="noopener noreferrer">
+                        Need help? Chat with us <span aria-hidden="true">&#8599;</span>
+                    </a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>DUCATI</h3>
+                <p>Official modern showcase prototype.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="index.html#performance">Technology</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Ducati</h4>
+                <p>Borgo Panigale, Bologna, Italy</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Custom Ducati Project. Designed for custom performance web deployment.</p>
+        </div>
+    </footer>
+
+    <!-- Order confirmation overlay -->
+    <div class="order-success" id="orderSuccess" role="dialog" aria-modal="true" aria-labelledby="successTitle" hidden>
+        <div class="order-success__backdrop" data-close-success></div>
+        <div class="order-success__card">
+            <button class="order-success__close" type="button" aria-label="Close confirmation" data-close-success>&times;</button>
+            <p class="tagline">ORDER RECEIVED</p>
+            <h2 id="successTitle">THANK <span class="ducati-red">YOU</span></h2>
+            <p class="success-lead">Your order <strong id="successOrderId"></strong> has been prepared.</p>
+            <p class="success-copy" id="successCopy">Opening WhatsApp with your order details. Press send in WhatsApp to deliver it to our sales team.</p>
+            <div class="success-summary" id="successSummary"></div>
+            <div class="success-actions">
+                <a class="btn btn-primary" id="successWhatsapp" href="https://wa.me/923113107375" target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+                <a class="btn btn-secondary" href="models.html">Back to models</a>
+            </div>
+            <p class="success-note">If WhatsApp did not open automatically, tap <strong>Open WhatsApp</strong> and press the send button.</p>
+        </div>
+    </div>
+
+    <script src="../static/bikes.js" defer></script>
+    <script src="../static/script.js" defer></script>
+    <script src="../static/order.js" defer></script>
+</body>
+</html>

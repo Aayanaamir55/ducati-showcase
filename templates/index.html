@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUCATI | Style, Sophistication, Performance</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- Google Fonts for racing typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Floating top controls: no taskbar, just the menu, logo and store link -->
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="siteMenu" aria-expanded="false">
+        <span class="menu-toggle__icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <span class="menu-toggle__text">Menu</span>
+    </button>
+
+    <header class="top-ui">
+        <span class="top-ui__spacer" aria-hidden="true"></span>
+
+        <a href="#hero" class="brand" aria-label="Ducati home">
+            <span class="brand__word">DUCATI</span>
+            <span class="brand__sub">CORSE</span>
+        </a>
+
+        <a class="store-link" href="https://www.ducati.com/ww/en/apparel" target="_blank" rel="noopener noreferrer">
+            <span>Ducati Store</span>
+            <span class="store-link__arrow" aria-hidden="true">&#8599;</span>
+        </a>
+    </header>
+
+    <!-- Pentagon-shaped menu panel -->
+    <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+
+    <aside class="menu-panel" id="siteMenu" aria-hidden="true">
+        <div class="menu-panel__content">
+            <p class="menu-kicker">Ducati Corse</p>
+
+            <nav class="menu-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html"><span>01</span>Home</a></li>
+                    <li><a href="models.html"><span>02</span>Models</a></li>
+                    <li><a href="index.html#performance"><span>03</span>Tech &amp; Engine</a></li>
+                    <li><a href="index.html#experience"><span>04</span>Test Ride</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-meta">
+                <a href="https://www.ducati.com/ww/en/apparel" target="_blank" rel="noopener noreferrer">Ducati Store &#8599;</a>
+                <p>Borgo Panigale, Bologna<br>Italy</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-media" aria-hidden="true">
+            <img src="../static/images/ducati-hero-sharp.jpg" alt="">
+            <!--
+                To use a riding video instead, replace the image above with:
+                <video autoplay muted loop playsinline poster="../static/images/ducati-hero-sharp.jpg">
+                    <source src="../static/videos/ducati-ride.mp4" type="video/mp4">
+                </video>
+            -->
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content discover-hero__content">
+            <p class="tagline">THE DUCATI RANGE</p>
+            <h1 class="discover-hero__title">DISCOVER ALL <span class="ducati-red">DUCATI MODELS</span></h1>
+            <p class="hero-subtext">A complete range designed to meet every need: from touring to urban use, from road to the track. Whatever your riding style, there is a Ducati ready to accompany you.</p>
+
+            <div class="hero-actions">
+                <a href="models.html" class="btn btn-primary">Discover More</a>
+                <a href="#performance" class="btn btn-secondary">Explore Technology</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering & Heritage Section -->
+    <section id="performance" class="engineering-section">
+        <div class="engineering-container">
+            <div class="engineering-text">
+                <span class="section-subtitle">DESMODROMIC SYSTEM</span>
+                <h2>ENGINEERED FOR <span class="ducati-red">THE TRACK</span></h2>
+                <p>Unlike standard engines, our Desmodromic valve control system mechanically closes the valves with high precision at high RPMs, allowing up to 14,500 RPM on street-legal engines.</p>
+                <ul class="feature-list">
+                    <li>Counter-rotating crankshaft to counteract wheel inertia</li>
+                    <li>Twin Pulse firing order for predictable power delivery</li>
+                    <li>Bosch 6-axis Inertial Measurement Unit (IMU) electronics package</li>
+                </ul>
+            </div>
+            <div class="engineering-visual">
+                <div class="visual-box">
+                    <div class="visual-stat">14,500 <small>RPM</small></div>
+                    <p>MAX ENGINE SPEED</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ducati Centenario -->
+    <section id="centenario" class="centenario-section">
+        <div class="centenario-inner">
+            <div class="centenario-aside">
+                <span class="section-subtitle">DUCATI CENTENARIO</span>
+                <p class="centenario-years">1926 <span>&mdash;</span> 2026</p>
+                <div class="centenario-dates">
+                    <span><strong>04 SEP</strong>2026</span>
+                    <span class="centenario-dates__line" aria-hidden="true"></span>
+                    <span><strong>05 OCT</strong>2026</span>
+                </div>
+                <p class="centenario-place">Bologna, Italia</p>
+            </div>
+
+            <div class="centenario-copy">
+                <h2>A CENTURY ON DISPLAY <span class="ducati-red">IN BOLOGNA</span></h2>
+
+                <p class="centenario-lead">One hundred years ago, in a city that was learning to imagine the future, three brothers sparked an idea. From that moment on, Bologna and Ducati have never parted ways: the same road, travelled together for a century.</p>
+
+                <p>From 4 September to 5 October 2026, we brought that story back to the very places where it was born and grew, creating a city-wide exhibition across Bologna. An invitation to rediscover a shared heritage: the story of a brand that has carried Bologna and Italy to every corner of the world.</p>
+
+                <p>Four iconic locations in the historic city centre hosted four chapters of a century-long story that continues to belong to the entire city.</p>
+
+                <div class="centenario-stats">
+                    <div>
+                        <strong>100</strong>
+                        <span>Years of Ducati</span>
+                    </div>
+                    <div>
+                        <strong>4</strong>
+                        <span>Iconic locations</span>
+                    </div>
+                    <div>
+                        <strong>1</strong>
+                        <span>City, one story</span>
+                    </div>
+                </div>
+
+                <a class="btn btn-primary centenario-cta" href="https://www.ducati.com/us/en/ducati-centenario" target="_blank" rel="noopener noreferrer">
+                    Explore the Centenario <span aria-hidden="true">&#8599;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Ride Contact Form -->
+    <section id="experience" class="contact-section">
+        <div class="contact-card">
+            <h2>BOOK A <span class="ducati-red">TEST RIDE</span></h2>
+            <p>Feel the thrilling power of Borgo Panigale engineering firsthand.</p>
+            
+            <form action="/book-test-ride" method="POST" class="test-ride-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <select name="model_choice" required>
+                        <option value="" disabled selected>Select Bike Model</option>
+                        <option value="panigale_v4">Panigale V4 S</option>
+                        <option value="streetfighter_v4">Streetfighter V4</option>
+                        <option value="multistrada_v4">Multistrada V4 Rally</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Request Session</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>DUCATI</h3>
+                <p>Official modern showcase prototype.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="index.html#performance">Technology</a></li>
+                    <li><a href="index.html#centenario">Centenario</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Ducati</h4>
+                <p>Borgo Panigale, Bologna, Italy</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Custom Ducati Project. Designed for custom performance web deployment.</p>
+        </div>
+    </footer>
+
+    <script src="../static/script.js" defer></script>
+</body>
+</html>

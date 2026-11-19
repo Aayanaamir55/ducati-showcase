@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse the complete Ducati range and purchase your next motorcycle. DesertX, Diavel, Hypermotard, Monster, Multistrada and Desmo off-road models.">
+    <title>Models | Ducati</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="models-page">
+
+    <!-- Floating top controls -->
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="siteMenu" aria-expanded="false">
+        <span class="menu-toggle__icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <span class="menu-toggle__text">Menu</span>
+    </button>
+
+    <header class="top-ui">
+        <span class="top-ui__spacer" aria-hidden="true"></span>
+
+        <a href="index.html" class="brand" aria-label="Ducati home">
+            <span class="brand__word">DUCATI</span>
+            <span class="brand__sub">CORSE</span>
+        </a>
+
+        <a class="store-link" href="https://www.ducati.com/ww/en/apparel" target="_blank" rel="noopener noreferrer">
+            <span>Ducati Store</span>
+            <span class="store-link__arrow" aria-hidden="true">&#8599;</span>
+        </a>
+    </header>
+
+    <!-- Pentagon-shaped menu panel -->
+    <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+
+    <aside class="menu-panel" id="siteMenu" aria-hidden="true">
+        <div class="menu-panel__content">
+            <p class="menu-kicker">Ducati Corse</p>
+
+            <nav class="menu-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html"><span>01</span>Home</a></li>
+                    <li><a href="models.html" aria-current="page"><span>02</span>Models</a></li>
+                    <li><a href="index.html#performance"><span>03</span>Tech &amp; Engine</a></li>
+                    <li><a href="index.html#experience"><span>04</span>Test Ride</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-meta">
+                <a href="https://www.ducati.com/ww/en/apparel" target="_blank" rel="noopener noreferrer">Ducati Store &#8599;</a>
+                <p>Borgo Panigale, Bologna<br>Italy</p>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero__content">
+                <a href="index.html" class="back-link">&larr; Back to home</a>
+                <p class="tagline">THE DUCATI RANGE</p>
+                <h1>ALL <span class="ducati-red">DUCATI</span> MODELS</h1>
+                <p>From touring to urban use, from road to track &mdash; choose the Ducati built around your riding style. Every model is available to order online.</p>
+                <div class="page-hero__stats">
+                    <span><strong>22</strong> Models</span>
+                    <span><strong>7</strong> Families</span>
+                    <span><strong>100</strong> Collezione editions</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full model lineup -->
+        <section id="models" class="models-section models-page__section">
+            <div class="section-title">
+                <div>
+                    <h2>THE <span class="ducati-red">LINEUP</span></h2>
+                    <p id="modelCount">22 models available</p>
+                </div>
+                <p class="section-title__note">Select a model to begin your order. A Ducati specialist will confirm availability and delivery on WhatsApp.</p>
+            </div>
+
+            <div class="filter-bar" id="filterBar" aria-label="Filter models by family"></div>
+
+            <div class="model-grid" id="bikeGrid">
+                <noscript>
+                    <p class="noscript-note">Please enable JavaScript to browse the Ducati model range.</p>
+                </noscript>
+            </div>
+        </section>
+
+        <!-- Purchase information -->
+        <section class="purchase-info">
+            <div class="purchase-info__inner">
+                <div>
+                    <span class="section-subtitle">HOW IT WORKS</span>
+                    <h2>FROM SELECTION <span class="ducati-red">TO ORDER</span></h2>
+                </div>
+                <ol class="purchase-steps">
+                    <li>
+                        <span>01</span>
+                        <div>
+                            <h3>Choose your Ducati</h3>
+                            <p>Browse the full range and select the model that matches your riding style.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>02</span>
+                        <div>
+                            <h3>Complete your details</h3>
+                            <p>Tell us who you are and where the bike should be delivered.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>03</span>
+                        <div>
+                            <h3>Confirm on WhatsApp</h3>
+                            <p>Your order is sent directly to our sales team for final confirmation.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>DUCATI</h3>
+                <p>Official modern showcase prototype.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="index.html#performance">Technology</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Ducati</h4>
+                <p>Borgo Panigale, Bologna, Italy</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Custom Ducati Project. Designed for custom performance web deployment.</p>
+        </div>
+    </footer>
+
+    <script src="../static/bikes.js" defer></script>
+    <script src="../static/script.js" defer></script>
+    <script src="../static/models.js" defer></script>
+</body>
+</html>

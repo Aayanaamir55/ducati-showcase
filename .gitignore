@@ -1,0 +1,12 @@
+# Credentials
+.env
+
+# Customer order records and server logs
+orders/*.json
+server.log
+server.err.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
